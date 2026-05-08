@@ -1,0 +1,273 @@
+# ============================================================
+# ADGUARD HOME BLOCKLIST - Microsoft & Google
+# Except :
+#   - GitHub / VS Code
+#   - Microsoft Documentations 
+#   - Windows Update
+#   - Windows Activation
+#   - Windows NTP server
+#   - Login with Google
+#   - YouTube
+#   - Google images CDN
+#   - Google DNS (DoH)
+# ============================================================
+# MICROSOFT - WHITELIST
+# ============================================================
+# --- GitHub / VS Code ---
+@@||github.com^
+@@||github.io^
+@@||githubusercontent.com^
+@@||raw.githubusercontent.com^
+@@||objects.githubusercontent.com^
+@@||avatars.githubusercontent.com^
+@@||codeload.github.com^
+@@||api.github.com^
+@@||alive.github.com^
+@@||central.github.com^
+@@||collector.github.com^
+@@||pipelines.actions.githubusercontent.com^
+@@||productionresultssa*.blob.core.windows.net^
+@@||vscode.dev^
+@@||update.code.visualstudio.com^
+# --- Microsoft Documentations ---
+@@||docs.microsoft.com^
+@@||learn.microsoft.com^
+@@||support.microsoft.com^
+@@||techcommunity.microsoft.com^
+@@||devblogs.microsoft.com^
+@@||social.msdn.microsoft.com^
+@@||msdn.microsoft.com^
+# --- Windows Update ---
+@@||windowsupdate.microsoft.com^
+@@||update.microsoft.com^
+@@||download.microsoft.com^
+@@||download.windowsupdate.com^
+@@||dl.delivery.mp.microsoft.com^
+@@||tlu.dl.delivery.mp.microsoft.com^
+@@||emdl.ws.microsoft.com^
+@@||delivery.mp.microsoft.com^
+@@||fe2.update.microsoft.com^
+@@||fe3.delivery.mp.microsoft.com^
+@@||fe3cr.delivery.mp.microsoft.com^
+@@||sls.update.microsoft.com^
+@@||slscr.update.microsoft.com^
+@@||ctldl.windowsupdate.com^
+@@||wu.ec.azureedge.net^
+@@||wustat.windows.com^
+@@||ntservicepack.microsoft.com^
+@@||catalog.update.microsoft.com^
+@@||catalog.s.download.windowsupdate.com^
+# --- Windows Activation / Licences ---
+@@||activation.sls.microsoft.com^
+@@||licensing.mp.microsoft.com^
+@@||validation.sls.microsoft.com^
+@@||displaycatalog.mp.microsoft.com^
+@@||purchase.mp.microsoft.com^
+@@||go.microsoft.com^
+@@||kms.core.windows.net^
+@@||akamaized.net^
+# --- NTP Windows ---
+@@||time.windows.com^
+# ============================================================
+# MICROSOFT - BLOCKLIST
+#
+# Recommended to add Hagezi's Multi Pro/Multi Pro++ block list
+# against data collection
+# ============================================================
+# Telemetry / Diagnostics
+||vortex.data.microsoft.com^
+||settings-win.data.microsoft.com^
+||telemetry.microsoft.com^
+||browser.pipe.aria.microsoft.com^
+||pipe.aria.microsoft.com^
+||mobile.pipe.aria.microsoft.com^
+||v10.events.data.microsoft.com^
+||v10.vortex-win.data.microsoft.com^
+||v20.events.data.microsoft.com^
+||self.events.data.microsoft.com^
+||watson.telemetry.microsoft.com^
+||watson.ppe.telemetry.microsoft.com^
+||ceuswatcab01.blob.core.windows.net^
+||ceuswatcab02.blob.core.windows.net^
+||weus2watcab01.blob.core.windows.net^
+||weus2watcab02.blob.core.windows.net^
+||sqm.microsoft.com^
+||sqm.telemetry.microsoft.com^
+||oca.telemetry.microsoft.com^
+||kmwatsonc.events.data.microsoft.com^
+||au.vortex-win.data.microsoft.com^
+# Ads / MSN / Bing / Cortana
+||ads.msn.com^
+||adnxs.com^
+||bingads.microsoft.com^
+||bat.bing.com^
+||c.bing.com^
+||a.ads1.msn.com^
+||a.ads2.msn.com^
+||ac3.msn.com^
+||cdn.content.prod.cms.msn.com^
+||ntp.msn.com^
+||msn.com^
+||bing.com^
+||cortana.ai^
+||api.cortana.ai^
+||hp.msn.com^
+# Tracking / Spying
+||df.telemetry.microsoft.com^
+||reports.wes.df.telemetry.microsoft.com^
+||wes.df.telemetry.microsoft.com^
+||statsfe1.ws.microsoft.com^
+||statsfe2.ws.microsoft.com^
+||survey.watson.microsoft.com^
+||watson.microsoft.com^
+# OneDrive
+||onedrive.live.com^
+||skyapi.onedrive.live.com^
+||api.onedrive.com^
+||onedrive.com^
+||storage.live.com^
+||skydrive.wns.windows.com^
+# Microsoft Edge
+||edge.microsoft.com^
+||edgeassetservice.azureedge.net^
+||assets.msn.com^
+||config.edge.skype.com^
+||odc.officeapps.live.com^
+# Office 365 / Teams / Xbox / Other services
+||office.com^
+||office365.com^
+||live.com^
+||outlook.com^
+||hotmail.com^
+||microsoftonline.com^
+||teams.microsoft.com^
+||xbox.com^
+||xboxlive.com^
+||account.microsoft.com^
+||login.live.com^
+||login.microsoft.com^
+||login.microsoftonline.com^
+||signup.live.com^
+||profile.microsoft.com^
+||xbox.ipv6.microsoft.com^
+||store.steampowered.com^
+# Misc Microsoft
+||microsoft.com^
+||microsoftstore.com^
+||windows.com^
+||windowsphone.com^
+||azure.com^
+||azurewebsites.net^
+||trafficmanager.net^
+||cloudapp.net^
+||blob.core.windows.net^
+# ============================================================
+# GOOGLE - WHITELIST
+# ============================================================
+# --- YouTube ---
+@@||youtube.com^
+@@||www.youtube.com^
+@@||m.youtube.com^
+@@||youtu.be^
+@@||youtubei.googleapis.com^
+@@||yt3.ggpht.com^
+@@||ytimg.com^
+@@||i.ytimg.com^
+@@||s.ytimg.com^
+@@||youtube-nocookie.com^
+@@||video.google.com^
+@@||googlevideo.com^
+@@||rr*.googlevideo.com^
+@@||manifest.googlevideo.com^
+# --- Google Login (for YouTube/Third-party services) ---
+@@||accounts.google.com^
+@@||myaccount.google.com^
+@@||oauth2.googleapis.com^
+@@||apis.google.com^
+@@||ssl.gstatic.com^
+@@||accounts.gstatic.com^
+@@||lh3.googleusercontent.com^
+@@||lh4.googleusercontent.com^
+@@||lh5.googleusercontent.com^
+@@||lh6.googleusercontent.com^
+# --- CDN Google Images ---
+@@||googleusercontent.com^
+@@||images.google.com^
+@@||gstatic.com^
+@@||encrypted-tbn0.gstatic.com^
+@@||encrypted-tbn1.gstatic.com^
+@@||encrypted-tbn2.gstatic.com^
+@@||encrypted-tbn3.gstatic.com^
+@@||photos.google.com^
+@@||lh1.google.com^
+@@||lh2.google.com^
+@@||lh3.google.com^
+# --- Google DNS ---
+@@||dns.google^
+# ============================================================
+# GOOGLE - BLOCKLIST
+# ============================================================
+# Search / Maps / Other services
+||google.com^
+||google.fr^
+||google.be^
+||google.ca^
+||google.ch^
+||google.co.uk^
+||google.de^
+||google.es^
+||google.it^
+||google.nl^
+||google.pl^
+||google.pt^
+||google.ru^
+||google.com.br^
+||google.com.au^
+||google.co.jp^
+||google.co.in^
+||maps.googleapis.com^
+||maps.google.com^
+||www.google.com^
+# Analytics / Ads / Tracking
+#
+# Recommended to add Hagezi's Multi Pro/Multi Pro++ block list
+# against data collection
+||google-analytics.com^
+||googletagmanager.com^
+||googletagservices.com^
+||doubleclick.net^
+||adservice.google.com^
+||pagead2.googlesyndication.com^
+||partner.googleadservices.com^
+||tpc.googlesyndication.com^
+||googleadservices.com^
+||googlesyndication.com^
+||fundingchoicesmessages.google.com^
+||adwords.google.com^
+||analytics.google.com^
+# Firebase / GCP / misc APIs
+||firebaseapp.com^
+||firebaseio.com^
+||firebase.google.com^
+||fcm.googleapis.com^
+||cloudmessaging.googleapis.com^
+||iid.googleapis.com^
+# Drive / Gmail / Meet / Docs
+||drive.google.com^
+||docs.google.com^
+||sheets.google.com^
+||slides.google.com^
+||gmail.com^
+||mail.google.com^
+||meet.google.com^
+||chat.google.com^
+||classroom.google.com^
+||calendar.google.com^
+# Misc blocked Google
+||google.com^
+||googleapis.com^
+||googleapps.com^
+||chromium.org^
+||chrome.com^
+||play.google.com^
+||store.google.com^
