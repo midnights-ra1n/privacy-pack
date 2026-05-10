@@ -27,6 +27,10 @@ Clean, broad coverage. OISD Small (conservative) or OISD Full (comprehensive).
 Classic combined hosts list. [github.com/StevenBlack/hosts](https://github.com/StevenBlack/hosts)
 
 ### My custom Microsoft and Google blocklist (inclute white list)
+
+> [!CAUTION]
+> I noticed that despite YouTube's whitelisting, the mobile apps were unresponsive and that requests to Google were blocked when connecting via a browser. Therefore, it's crucial to be very careful when adding this list to AdGuard Home or any other DNS-based service you might be using.
+
 Will block all Microsoft and Google services except:
 - GitHub / VS Code
 - Microsoft Documentations 
